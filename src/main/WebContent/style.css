@@ -1,8 +1,10 @@
+/* General setup */
+
 html{
   font-family: 'ZCOOL XiaoWei', serif !important;
 }
 .first {
-  background-image: url(images/wallpaper.jpg);
+  background-image: url(images/intro.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height:700px;
@@ -18,14 +20,17 @@ html{
 .first h1 {
   color: white;
 }
+.first h5{
+  color: white;
+}
 
 .firt a {
   color: white !important;
 }
 .social li{
   font-size: 17px;
-  display: inline-block;
-  float:right;
+  display: block;
+  float: right;
   padding-right: 1%;
 }
 
@@ -38,15 +43,25 @@ nav{
   border-top: 1px solid white;
 }
  .pink{
-   background-color: #b62b52;
+   background-color: rgba(182,43,82,0.3);
+ }
+ .pink:hover{
+  background-color: rgba(182,43,82,1);
  }
 
  .green{
-   background-color: #769d2a;
+   background-color: rgba(118,157,42,0.3);
+ }
+ .green:hover{
+  background-color: rgba(118,157,42,1);
  }
 
  .teal {
-    background-color: #01a0a6;
+    background-color: rgba(1,160,166,0.3);
+ }
+
+ .teal:hover{
+  background-color: rgba(1,160,166,1);
  }
 
  a h2 {
@@ -111,7 +126,7 @@ a:hover {
 }
 
 .four {
-  background-image: url(images/four.jpeg);
+  background-image: url(images/audi.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -136,6 +151,7 @@ a:hover {
 
  .five img{
    width: 100%;
+   margin-left: 50%;
  }
 
  .six {
@@ -164,7 +180,7 @@ a:hover {
 }
 
 .letter{
-  background-image: url(images/letter.jpeg);
+  background-image: url(images/wallpaper.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
@@ -191,4 +207,33 @@ footer {
   background-color: black;
   color:white;
   padding: 4%;
+}
+
+.row h2{
+  text-align: center;
+  padding-top: 30%;
+  color: white;
+}
+
+.pic img{
+  animation: fade ease-in 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade{
+  from{
+    opacity: 0%;
+  }
+  to{
+    opacity: 100%;
+  }
+}
+
+.parkimg img{
+  display: flex;
+  height: 200px;
+  width: 300px;
+  margin-right: 0px;
+  padding-right: 0px;
 }
