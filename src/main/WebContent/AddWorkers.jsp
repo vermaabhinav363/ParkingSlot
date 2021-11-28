@@ -17,7 +17,7 @@ try {
 	
 	Statement st1 = conn.createStatement();
 		int i1 = st.executeUpdate(
-				"Insert into workers (WorkerName , ImageWorker , Email, WorkerRating , Pass ) values( " + "'" +  Name + "',"  + "'" + Image + "', " + "'" + Email + "', 1 ," + "' " + Pass + "'"  + ")" );
+				"Insert into workers (WorkerName , ImageWorker , Email, WorkerRating , Pass ) values( " + "'" +  Name + "',"  + "'" + Image + "', " + "'" + Email + "', 1 ," + "'" + Pass + "'"  + ")" );
 		
 		out.println("<html><meta http-equiv=\"refresh\" \r\n"
 				+ "        content=\"5; url = AdminBoard.jsp\" /><body><b>Done" + "</b></body></html>");

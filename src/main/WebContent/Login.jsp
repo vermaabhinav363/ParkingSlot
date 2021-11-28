@@ -24,7 +24,7 @@
 
 		if (i.next()) {
 			out.println("<html><meta http-equiv=\"refresh\" \r\n"
-			+ "        content=\"5; url = UserBoard.jsp\" /><body><b>Logged In" + "</b></body></html>");
+			+ "        content=\"5; url = examples/dashboard.html\" /><body><b>Logged In" + "</b></body></html>");
 
 		} else {
 			out.println("<html><meta http-equiv=\"refresh\" \r\n"

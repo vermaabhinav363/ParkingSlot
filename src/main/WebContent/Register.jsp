@@ -25,7 +25,7 @@ body, div, form, input, select, p {
 }
 
 body {
-	background: url('images/ImageRegister.jpg') no-repeat center;
+	background: url('images/In.jpg') no-repeat center;
 	background-size: cover;
 }
 

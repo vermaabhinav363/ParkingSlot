@@ -27,7 +27,7 @@
 
 	
 	out.println("<html><meta http-equiv=\"refresh\" \r\n"
-			+ "        content=\"5; url = default.jsp\" /><body><b>" + "</b></body></html>");
+			+ "        content=\"5; url = http://localhost:8080/BasicWebApplication/default.jsp\" /><body><b>" + "</b></body></html>");
 	
 	%>
 </body>

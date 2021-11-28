@@ -14,7 +14,7 @@
 	<%
 	String email = request.getParameter("email");
 	String pass = request.getParameter("password");
-	request.getSession().setAttribute("EMAIL_VIA_LOGIN_ADMINISTER", email);
+	request.getSession().setAttribute("EMAIL_VIA_LOGIN_WORKER", email);
 	try {
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection conn = DriverManager.getConnection("jdbc:mysql:// localhost:3306/sonoo", "root", "9414");

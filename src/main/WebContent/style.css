@@ -33,7 +33,12 @@ html{
   float: right;
   padding-right: 1%;
 }
-
+.socialL li{
+  font-size: 17px;
+  display: block;
+  float: right;
+  padding-right: 1%;
+}
 li a{
   color: white !important;
 }
@@ -180,11 +185,11 @@ a:hover {
 }
 
 .letter{
-  background-image: url(images/wallpaper.jpg);
+  
   background-size: cover;
   background-repeat: no-repeat;
   height: 400px;
-  color: white;
+  color: black;
 
 }
 
@@ -201,6 +206,7 @@ a:hover {
 font-size: 20px;
 border-radius: 5px;
 font-variant-caps: all-petite-caps;
+padding: 0;
 }
 
 footer {
@@ -237,3 +243,6 @@ footer {
   margin-right: 0px;
   padding-right: 0px;
 }
+
+
+

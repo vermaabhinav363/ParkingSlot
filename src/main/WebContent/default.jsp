@@ -3,6 +3,8 @@
 <html>
 <head>
 <title>Register Portal</title>
+ <meta name="google-signin-client_id" content="131328682536-n70nep8udqmntu9iu02vouubecul78jk.apps.googleusercontent.com">
+       <script src="https://apis.google.com/js/platform.js" async defer></script>
 <link rel="stylesheet"
 	href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
 	integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
@@ -25,7 +27,7 @@ body, div, form, input, select, p {
 }
 
 body {
-	background: url('images/ImageRegister.jpg') no-repeat center;
+	background: url('images/In.jpg') no-repeat center;
 	background-size: cover;
 }
 
@@ -160,7 +162,7 @@ button:hover, .btn-item:hover {
 			<p>We provide car parking slots across India.</p>
 			<div class="btn-group">
 				<a class="btn-item" href="default1.html">LOGIN</a>
-
+			     
 			</div>
 		</div>
 		

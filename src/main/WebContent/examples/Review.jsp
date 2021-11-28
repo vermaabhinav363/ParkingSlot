@@ -26,7 +26,7 @@
 			"Insert into reviews(Email,Comment) values(" + "'"
 					+ email + "'," + "'" + pass + "'" + ")");
 			out.println("<html><meta http-equiv=\"refresh\" \r\n"
-			+ "        content=\"5; url = UserBoard.jsp\" /><body><b>Successfully Inserted" + "</b></body></html>");
+			+ "        content=\"5; url = http://localhost:8080/BasicWebApplication/examples/dashboard.html\" /><body><b>Successfully Inserted" + "</b></body></html>");
 
 		
 	} catch (Exception e) {

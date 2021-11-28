@@ -32,7 +32,7 @@
 				+ "'," + "'" + register + "'," + "'" + address + "'," + "'" + password + "'" + ")");
 		out.println("Welcome, directing you to userBoard.");
 		out.println("<html><meta http-equiv=\"refresh\" \r\n"
-				+ "        content=\"5; url = UserBoard.jsp\" /><body><b>" + "</b></body></html>");
+				+ "        content=\"5; url = examples/dashboard.html\" /><body><b>" + "</b></body></html>");
 	}
 	else{
 		

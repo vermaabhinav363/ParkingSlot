@@ -62,17 +62,22 @@
 						Class.forName("com.mysql.jdbc.Driver");
 						Connection conn = DriverManager.getConnection("jdbc:mysql:// localhost:3306/sonoo", "root", "9414");
 						Statement st = conn.createStatement();
-						String email =(String)request.getSession().getAttribute("EMAIL_VIA_LOGIN_ADMINISTER");
+						String email =(String)request.getSession().getAttribute("EMAIL_VIA_LOGIN_WORKER");
 						ResultSet i = st.executeQuery(
 								"SELECT * from workers WHERE Email = " + "'" + email + "'" );
-						out.println("<table style='width:100%'><tr><th>WorkerName</th><th>WorkerRating</th><th>Email</th><th>Password</th></tr>");
+						out.println("<table style='width:100%'><tr><th>WorkerName</th><th>WorkerRating</th><th>Email</th><th>Password</th><th>CarRepair</th><th>CarWash</th><th>Fuel</th></tr>");
 						while(i.next()) {
 							String str1 = i.getString("WorkerName");
 							String str2 = i.getString("WorkerRating");
 							String str3 = i.getString("Email");
 							String str4 = i.getString("Pass");
+							String str5 = i.getString("CarRepair");
+							String str6 = i.getString("CarWash");
+							String str7 = i.getString("FuelRefill");
 							
-							out.println("<tr><th>"+str1+ "</th><th>"+str2+ "</th><th>"+str3+"</th><th>"+str4+ "</th></tr>");
+							
+							
+							out.println("<tr><th>"+str1+ "</th><th>"+str2+ "</th><th>"+str3+"</th><th>"+str4+ "</th><th>"+str5+ "</th><th>"+str6+ "</th><th>"+str7+ "</th></tr>");
 							
 						}
 						
@@ -84,9 +89,25 @@
 					}
 					
 					%>
-				
+					<br> <br> <br>
+					<h2 class="text-center">Update Profile</h2>
+							<br> <br> <br>
 					
-
+					<form action="./UpdateWorker.jsp" method="post">
+								<div class="title"></div>
+								<div class="info">
+								
+										Car Repair<input class="fname" type="text" name="Repair" placeholder ="0/1"
+										required>
+										Car Wash<input class="fname" type="text" name="Wash"placeholder ="0/1"
+										required>
+										Fuel<input class="fname" type="text" name="Fuel"placeholder ="0/1"
+										required>
+										<button type="submit">Submit</button>
+								</div>
+								
+								
+							</form>
 
 
 
